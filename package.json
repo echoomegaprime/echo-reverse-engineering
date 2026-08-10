@@ -1,0 +1,38 @@
+{
+  "name": "@echoomegaprime/echo-reverse-engineering",
+  "version": "1.0.0",
+  "description": "Governed reverse-engineering MCP suite \u2014 catalog, run playbooks, live URL enrich, decompile heuristic. Mutating playbooks require EXECUTE.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "echo-reverse-engineering": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --import tsx --test tests/**/*.test.ts",
+    "start": "node dist/cli.js",
+    "dev": "tsx src/cli.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/echoomegaprime/echo-reverse-engineering.git"
+  },
+  "keywords": [
+    "echo",
+    "mcp",
+    "oauth",
+    "echoomegaprime",
+    "echo-reverse-engineering"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
